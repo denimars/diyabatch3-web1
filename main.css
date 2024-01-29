@@ -50,7 +50,7 @@ nav button{
     display: inline-flex;
     align-items: center;
     background: transparent;
-    border: 1px solid #fff;
+    border: 1px solid #575353;
     padding: 7px 10px;
 }
 
@@ -59,22 +59,36 @@ nav button{
     margin-left: 10px;
 }
 
-.header-content{
+.header-content-begin{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    transform: translate(10%, -30%);
+    text-align: center;
+    margin-top: 100px;
+    /* background-color: #db0001; */
+
+}
+
+.header-content-begin h1{
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 1200px;
+    
+}
+
+.header-content-end{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     margin-top: 100px;
+    /* background-color: #db0001; */
 }
 
-.header-content h1{
-    font-size: 60px;
-    line-height: 70px;
-    font-weight: 600;
-    max-width: 650px;
-    
-}
+
 
 .header-content h3{
     font-weight: 400;
@@ -82,7 +96,7 @@ nav button{
 }
 
 .email-signup{
-    background:#fff;
+    /* background:#fff; */
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -95,6 +109,11 @@ nav button{
     border: 0;
     outline: 0;
     margin-left: 20px;
+    background:  transparent;
+    border: 1px solid #ded7d7;
+    padding: 12px;
+    color: #fff;
+    font-size: 20px;
 }
 
 .email-signup button{
@@ -104,4 +123,39 @@ nav button{
     color: #fff;
     font-size: 16px;
     padding: 16px 10px;
+}
+
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+}
+
+.img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img{
+    display: block;
+    width: 90%;
+}
+
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
